@@ -10,10 +10,10 @@ import re
     file.
     It also gives an option if you want to save a csv related with the file
 """
-def mta_selector():
+def mta_selector(ds,de):
     #Define date period
-    ds=input('Enter start Date (mm-dd-yy): ')
-    de=input('Enter End Date (mm-dd-yy): ')
+    #ds=input('Enter start Date (mm-dd-yy): ')
+    #de=input('Enter End Date (mm-dd-yy): ')
     #Run mta_updater which returns an updated list of links from MTA website
     links=mta_updater()
     sel=mta_importer(ds,de,links)
